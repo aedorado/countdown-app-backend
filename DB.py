@@ -20,9 +20,7 @@ class DB:
                 "title": row[1],
                 "date": row[2]
             })
-        return {
-            "events" : res_list
-        }
+        return res_list
 
     def get_all(self):
         query = "SELECT * FROM countdown"
